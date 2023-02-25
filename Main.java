@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Prosze podac nazwe programu dla ktorego chcesz dostac haslo: ");
-        Path path = Paths.get("/Users/jakubignatowicz/Documents/Pass/" + scan.nextLine());
+        Path path = Paths.get(scan.nextLine());
         System.out.print("Prosze podac dlugosc hasla: ");
         int length = scan.nextInt();
         Password pass = new Password(length);
